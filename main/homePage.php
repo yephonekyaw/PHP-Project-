@@ -206,17 +206,20 @@
                 <div class="col-md-2 profile-pic text-center">
                     <div class="img-box">
                         <img src="Image/YePhoneKyaw.jpg" class="img-fluid" alt="">
+                        <!-- <ul class="align-middle">
+                            <a href="https://www.facebook.com/yephone.kyaw.5439"><li><i class="fab fa-facebook"></i></li></a>
+                        </ul> -->
                     </div>
                     <h2>Ye Phone Kyaw</h2>
-                    <h3>Leader</h3>
+                    <!-- <h3>Leader</h3> -->
                 </div>
 
                 <div class="col-md-2 profile-pic text-center">
                     <div class="img-box">
-                        <img src="Image/KaungMinSat.jpg" class="img-fluid" alt="">
+                        <img src="Image/Nyan Swan Aung.jpg" class="img-fluid" alt="">
                     </div>
-                    <h2>Kaung Min Sat</h2>
-                    <h3>Backend Developer</h3>
+                    <h2>Nyan Swan Aung</h2>
+                    <!-- <h3>Backend Developer</h3> -->
                 </div>
 
                 <div class="col-md-2 profile-pic text-center">
@@ -224,43 +227,43 @@
                         <img src="Image/KaungMyatHtet.jpg" class="img-fluid" alt="">
                     </div>
                     <h2>Kaung Myat Htet</h2>
-                    <h3>UI/UX Designer</h3>
+                    <!-- <h3>UI/UX Designer</h3> -->
                 </div>
 
-                <div class="col-md-2 profile-pic text-center">
+                <!-- <div class="col-md-2 profile-pic text-center">
                     <div class="img-box">
                         <img src="Image/KaungMinHtet.jpg" class="img-fluid" alt="">
                     </div>
                     <h2>Kaung Min Htet</h2>
-                    <h3>UI/UX Designer</h3>
-                </div>
+                    <h3>Error Tester</h3>
+                </div> -->
             </div>
 
             <div class="row justify-content-md-center">
                 <div class="col-md-2 profile-pic text-center">
                     <div class="img-box">
-                        <img src="Image/HanNwaeNyein.jpg" class="img-fluid" alt="">
+                        <img src="Image/Han Nwae.jpg" class="img-fluid" alt="">
                     </div>
                     <h2>Han Nwae Nyein</h2>
-                    <h3>Backend Developer</h3>
+                    <!-- <h3>Backend Developer</h3> -->
                 </div>
 
                 <div class="col-md-2 profile-pic text-center">
                     <div class="img-box">
-                        <img src="Image/MyatSuKhin.jpg" class="img-fluid" alt="">
+                        <img src="Image/Hnin Kay Thayi Naing.jpg" class="img-fluid" alt="">
                     </div>
-                    <h2>Myat Su Khin</h2>
-                    <h3>UI/UX Designer</h3>
+                    <h2>Hnin Kay Thayi Naing</h2>
+                    <!-- <h3>UI/UX Designer</h3> -->
                 </div>
 
-                <div class="col-md-2 profile-pic text-center">
+                <!-- <div class="col-md-2 profile-pic text-center">
                     <div class="img-box">
                         <img src="Image/ZuZanWin.jpg" class="img-fluid" alt="">
                     </div>
                     <h2>Zu Zan Win</h2>
                     <h3>UI/UX Designer</h3>
                 </div>
-            </div>
+            </div> -->
         </div>
     </section>
 

@@ -89,10 +89,19 @@
                             </div>
                             <div class="col text-right">
                                 <button name="sign-in-submit" type="submit" class="btn btn-primary">Sign In</button>
-
                             </div>
                         </div>
                         <h6>Doesn't Have an Account? <a href="signupPage.php">Register Now</a></h6>
+                        <div class="row mb-2">
+                            <div class="col text-center">
+                                <button name="sign-in-submit" type="submit" class="btn btn-outline-success px-3"> <i class="fab fa-google"></i> &ensp; Sign In With Google</button>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col text-center">
+                                <button name="sign-in-submit" type="submit" class="btn btn-outline-primary"> <i class="fab fa-facebook-f"></i> &ensp; Sign In With Facebook</button>
+                            </div>
+                        </div>
                     </form>
                     <script src="validation.js"></script>
                 </div>
