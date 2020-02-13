@@ -1,5 +1,5 @@
 <?php
-     include("D:/xampp/htdocs/Shinn-Kya-Mal---Final-master/main/cons/config.php");
+     include("cons/config.php");
      $email=$_GET['email'];
  
      if(isset($_POST['reset-confirm-submit']))

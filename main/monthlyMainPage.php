@@ -1,6 +1,6 @@
 <?php
     session_start();
-    include("D:/xampp/htdocs/Shinn-Kya-Mal---Final-master/main/cons/config.php");
+    include("cons/config.php");
     if(isset($_SESSION['user']))
     {
         $id=$_SESSION['id'];

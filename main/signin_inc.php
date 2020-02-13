@@ -1,6 +1,6 @@
 <?php
 
-    include("D:/xampp/htdocs/Shinn-Kya-Mal---Final-master/main/cons/config.php");
+    include("cons/config.php");
     if(isset($_POST['sign-in-submit']))
     {
         $user_email=mysqli_real_escape_string($conn, $_POST['user_email']);

@@ -4,7 +4,7 @@
     {
         $user_id = $_SESSION['id'];
         $id = $_GET['id'];
-        include("D:/xampp/htdocs/Shinn-Kya-Mal---Final-master/main/cons/config.php");
+        include("cons/config.php");
 
         // Get Categories Name from expense table
         $sql = "SELECT * FROM income WHERE income_id='$id' ";

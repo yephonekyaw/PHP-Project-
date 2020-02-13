@@ -1,7 +1,7 @@
 <?php
     header("Content-type: text/css; charset: UTF-8");
     
-    include("D:/xampp/htdocs/Shinn-Kya-Mal---Final-master/main/cons/config.php");
+    include("cons/config.php");
     session_start();
     if(!isset($_SESSION['user']))
     {

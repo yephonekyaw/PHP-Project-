@@ -1,5 +1,5 @@
 <?php
-    include("D:/xampp/htdocs/Shinn-Kya-Mal---Final-master/main/cons/config.php");
+    include("cons/config.php");
     use PHPMailer\PHPMailer\PHPMailer;
     use PHPMailer\PHPMailer\Exception;
     require 'D:\xampp\htdocs\Shinn-Kya-Mal---Final-master\PHPMailer-master\src\Exception.php';
