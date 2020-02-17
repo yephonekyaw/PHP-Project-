@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css" type="text/css">
     <script src="script.js"></script>
+    <!-- bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
@@ -46,9 +47,9 @@
     <!-- ---------------- Navigation Bar ---------------- -->
 
     <header id="Top">
-        <nav class="navbar navbar-expand-lg  navbar-dark bg-primary">
+        <nav class="navbar fixed-top navbar-expand-sm " data-spy="affix">
             <!-- <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-light"> -->
-            <a class="navbar-brand" href="home.html"><i class="fas fa-piggy-bank"></i>Shinn Kya Mal</a>
+            <a class="navbar-brand" href="homePage.php"><i class="fas fa-piggy-bank"></i>Shinn Kya Mal</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -73,13 +74,13 @@
 
         <div class="container">
             <div class="row">
-                <div class="col-md-6 text-left">
+                <div class="col-md-6 text-left mx-2">
                     <h1>Track all your cash in <span>one place</span> </h1>
 
                     <p>Shinn Kya Mal helps you with the financial means.
                         So you can <span>focus on the goals</span> .</p>
 
-                    <a href="#Features" class="btn btn-primary"> Let's Start</a>
+                    <a href="#Features" class="btn btn-outline-dark"> Let's Start</a>
                 </div>
             </div>
 
@@ -147,8 +148,8 @@
             <h1>How?</h1>
             <div class="row">
                 <div class="col-md-7 Instruction">
-                    <h2> <span>1.</span> <a href="signinPage.php" class="btn btn-primary">Sign In</a> <span
-                            class="or">(OR)</span> <a href="signupPage.php" class="btn btn-primary">Sign Up</a></h2>
+                    <h2> <span>1.</span> <a href="signinPage.php" class="btn btn-dark">Sign In</a> <span
+                            class="or">(OR)</span> <a href="signupPage.php" class="btn btn-dark">Sign Up</a></h2>
                     <small>to enter your cash notebook.</small>
                     <h2> <span>2.</span> Start Tracking Your Cash Daily</h2>
                     <small>Food, bills, shopping. Whatever</small> <br>
@@ -280,7 +281,7 @@
                         <div class="card">
                             <div class="card-header" id="headingOne">
                                 <h2 class="mb-0">
-                                    <button class="btn btn-link" type="button" data-toggle="collapse"
+                                    <button class="btn btn-link text-secondary" type="button" data-toggle="collapse"
                                         data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                         What is Shinn Kya Mal?
                                     </button>
@@ -301,7 +302,7 @@
                         <div class="card">
                             <div class="card-header" id="headingTwo">
                                 <h2 class="mb-0">
-                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                    <button class="btn btn-link text-secondary collapsed" type="button" data-toggle="collapse"
                                         data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                                         Does your information secure?
                                     </button>
@@ -324,7 +325,7 @@
                         <div class="card">
                             <div class="card-header" id="headingThree">
                                 <h2 class="mb-0">
-                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                    <button class="btn btn-link text-secondary collapsed" type="button" data-toggle="collapse"
                                         data-target="#collapseThree" aria-expanded="false"
                                         aria-controls="collapseThree">
                                         How much it costs to use the service?
@@ -344,7 +345,7 @@
                         <div class="card">
                             <div class="card-header" id="headingThree">
                                 <h2 class="mb-0">
-                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                    <button class="btn btn-link text-secondary collapsed" type="button" data-toggle="collapse"
                                         data-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
                                         How to use Shinn Kya Mal?
                                     </button>
@@ -375,7 +376,7 @@
 
     <!-- ---------------- Footer ---------------- -->
 
-    <footer class="bg-primary">
+    <footer class="bg-dark">
         <div class="container">
             <a class="brandlink" href="#Top">
                 <h3>Shinn Kya Mal</h3>
@@ -412,7 +413,7 @@
                 </div>
             </div>
             <div class="text-center copyright">
-                <h5><i class="fas fa-copyright"></i> 2019 UIT. All Rights Reserved. </h5>
+                <h5><i class="fas fa-copyright"></i> 2020 UIT. All Rights Reserved. </h5>
             </div>
         </div>
     </footer>

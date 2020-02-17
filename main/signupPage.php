@@ -47,15 +47,15 @@
     <!-- ----------------- Sign Up Form ----------------- -->
 
     <section class="Sign" id="SignUp">
-        <nav class="navbar navbar-expand-lg  navbar-dark bg-primary">
-            <a class="navbar-brand" href="home.html"><i class="fas fa-piggy-bank"></i>Shinn Kya Mal</a>
+        <nav class="navbar navbar-expand-sm">
+            <a class="navbar-brand" href="homePage.php"><i class="fas fa-piggy-bank"></i>Shinn Kya Mal</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
+                    <li class="nav-item active">
                         <a class="nav-link" href="signupPage.php">SIGN UP</a>
                     </li>
                     <li class="nav-item">
@@ -100,7 +100,7 @@
             </div>
         </div>
         <div class="container text-center">
-            <h6><i class="fas fa-copyright"></i> 2019 UIT. All Rights Reserved. </h6>
+            <h6><i class="fas fa-copyright"></i> 2020 UIT. All Rights Reserved. </h6>
         </div>
     </section>
     <?php
