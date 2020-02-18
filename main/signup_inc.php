@@ -3,9 +3,9 @@
     include("cons/config.php");
     use PHPMailer\PHPMailer\PHPMailer;
     use PHPMailer\PHPMailer\Exception;
-    require 'D:\xampp\htdocs\Shinn-Kya-Mal---Final-master\PHPMailer-master\src\Exception.php';
-    require 'D:\xampp\htdocs\Shinn-Kya-Mal---Final-master\PHPMailer-master\src\PHPMailer.php';
-    require 'D:\xampp\htdocs\Shinn-Kya-Mal---Final-master\PHPMailer-master\src\SMTP.php';
+    require '..\PHPMailer-master\src\Exception.php';
+    require '..\PHPMailer-master\src\PHPMailer.php';
+    require '..\PHPMailer-master\src\SMTP.php';
     
     $mail = new PHPMailer(TRUE);
     $code = rand(111111, 999999);

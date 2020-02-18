@@ -1,6 +1,6 @@
 <?php
 
-    include("cons/config.php");
+    include("../main/cons/config.php");
     if(isset($_POST['sign-in-submit']))
     {
         $user_email=mysqli_real_escape_string($conn, $_POST['user_email']);
@@ -104,6 +104,10 @@
             $login_button = $google_client->createAuthUrl();
             header("location:".$login_button);   
         }
+        else 
+        {
+            echo "error";
+        }
     }
     else if(isset($_POST['facebook-login']))
     {
@@ -130,6 +134,7 @@
                 $facebook->setDefaultAccessToken($_SESSION['access_token']);
             }
 
+            $_SESSION['user_id'] = '';
             $_SESSION['user_name'] = '';
             $_SESSION['user_email_address'] = '';
             $_SESSION['user_image'] = '';
@@ -159,7 +164,7 @@
             // Get login url
             $facebook_permissions = ['email']; // Optional permissions
 
-            $facebook_login_url = $facebook_helper->getLoginUrl('http://localhost/Shinn-Kya-Mal---Final-master/FacebookLogin/index.php', $facebook_permissions);
+            $facebook_login_url = $facebook_helper->getLoginUrl('http://localhost/Shinn-Kya-Mal---Final-master/projectTesting/facebook_signin_inc.php', $facebook_permissions);
             
             header("location:".$facebook_login_url);
         }
