@@ -538,7 +538,7 @@
                         </tbody>
                         <tbody id="bycata">
                         <?php
-                            $sqlByCatTable = "SELECT expensebycat.*, categories.categories_name FROM expensebycat LEFT JOIN categories ON expense_cat_fk_id=categories_id WHERE expense_user_cat_id='$id' AND MONTH(expense_cat_date)='$month'  ";
+                            $sqlByCatTable = "SELECT expensebycat.*, expensecat.categories_name FROM expensebycat LEFT JOIN expensecat ON expense_cat_fk_id=categories_id WHERE expense_user_cat_id='$id' AND MONTH(expense_cat_date)='$month'  ";
                             $resultByCatTable = mysqli_query($conn, $sqlByCatTable);
                             while($rowByCatTable = mysqli_fetch_assoc($resultByCatTable))
                             {

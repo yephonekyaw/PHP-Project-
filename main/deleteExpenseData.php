@@ -15,7 +15,7 @@
         $dateMonth = date('m',strtotime($date));
 
         // Get Id Form Categories Table
-        $sqlCatId = "SELECT * FROM categories WHERE categories_name='$catName' ";
+        $sqlCatId = "SELECT * FROM expensecat WHERE categories_name='$catName' ";
         $resultCatId = mysqli_query($conn, $sqlCatId);
         $rowCatId = mysqli_fetch_assoc($resultCatId);
         $catId = $rowCatId['categories_id'];

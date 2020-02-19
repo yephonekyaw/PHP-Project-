@@ -15,7 +15,7 @@
         $dateMonth = date('m',strtotime($date));
 
         // Get Id Form Categories Table
-        $sqlCatId = "SELECT * FROM categories WHERE categories_name='$catName' ";
+        $sqlCatId = "SELECT * FROM expensecat WHERE categories_name='$catName' ";
         $resultCatId = mysqli_query($conn, $sqlCatId);
         $rowCatId = mysqli_fetch_assoc($resultCatId);
         $catId = $rowCatId['categories_id'];
@@ -41,7 +41,7 @@
             $datetime = mysqli_real_escape_string($conn, $_POST['datetime']);
             
             // Take categories id
-            $sqlCat = "SELECT categories_id FROM categories WHERE categories_name='$categories' ";
+            $sqlCat = "SELECT categories_id FROM expensecat WHERE categories_name='$categories' ";
             $resultCat = mysqli_query($conn, $sqlCat);
             $rowCat = $resultCat->fetch_assoc();
             $catId = $rowCat['categories_id'];
@@ -119,7 +119,7 @@
                 while($rowChart = $resultChart->fetch_assoc())
                 {
                     $ChartCatId = $rowChart['expense_cat_fk_id'];
-                    $sqlChartCat = "SELECT categories_name FROM categories WHERE categories_id='$ChartCatId' ";
+                    $sqlChartCat = "SELECT categories_name FROM expensecat WHERE categories_id='$ChartCatId' ";
                     $resultChartCat = mysqli_query($conn, $sqlChartCat);
                     $rowChartCat = $resultChartCat->fetch_assoc();
                     echo "['".$rowChartCat['categories_name']."',".$rowChart['expense_cat_amount']."],";

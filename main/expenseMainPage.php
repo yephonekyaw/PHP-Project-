@@ -26,7 +26,7 @@
             $categories = mysqli_real_escape_string($conn, $_POST['categories']);
             $datetime = mysqli_real_escape_string($conn, $_POST['datetime']);
             // Take categories id
-            $sqlCat = "SELECT categories_id FROM categories WHERE categories_name='$categories' ";
+            $sqlCat = "SELECT categories_id FROM expensecat WHERE categories_name='$categories' ";
             $resultCat = mysqli_query($conn, $sqlCat);
             $rowCat = $resultCat->fetch_assoc();
             $catId = $rowCat['categories_id'];
@@ -106,7 +106,7 @@
                 while($rowChart = $resultChart->fetch_assoc())
                 {
                     $ChartCatId = $rowChart['expense_cat_fk_id'];
-                    $sqlChartCat = "SELECT categories_name FROM categories WHERE categories_id='$ChartCatId' ";
+                    $sqlChartCat = "SELECT categories_name FROM expensecat WHERE categories_id='$ChartCatId' ";
                     $resultChartCat = mysqli_query($conn, $sqlChartCat);
                     $rowChartCat = $resultChartCat->fetch_assoc();
                     echo "['".$rowChartCat['categories_name']."',".$rowChart['expense_cat_amount']."],";
@@ -739,7 +739,7 @@
                         <tbody id="bycata">
 
                         <?php
-                            $sqlByCatTable = "SELECT expensebycat.*, categories.categories_name FROM expensebycat LEFT JOIN categories ON expense_cat_fk_id=categories_id WHERE expense_user_cat_id='$id' AND MONTH(expense_cat_date)='$month'  ";
+                            $sqlByCatTable = "SELECT expensebycat.*, expensecat.categories_name FROM expensebycat LEFT JOIN expensecat ON expense_cat_fk_id=categories_id WHERE expense_user_cat_id='$id' AND MONTH(expense_cat_date)='$month'  ";
                             $resultByCatTable = mysqli_query($conn, $sqlByCatTable);
                             while($rowByCatTable = mysqli_fetch_assoc($resultByCatTable))
                             {
