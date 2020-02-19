@@ -47,7 +47,7 @@
     <!-- ----------------- Sign In Form ----------------- -->
 
     <section id="SignIn" class="Sign">
-        <nav class="navbar navbar-expand-lg  navbar-dark bg-primary">
+        <nav class="navbar navbar-expand-sm">
             <a class="navbar-brand" href="homePage.php"><i class="fas fa-piggy-bank"></i>Shinn Kya Mal</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -91,16 +91,24 @@
                                 <button name="sign-in-submit" type="submit" class="btn btn-primary">Sign In</button>
                             </div>
                         </div>
-                        <h6>Doesn't Have an Account? <a href="signupPage.php">Register Now</a></h6>
-                        <div class="row mb-2">
+                        <h6 class="mb-3">Doesn't Have an Account? <a href="signupPage.php">Register Now</a></h6>
+                        <div class="row mb-3">
                             <div class="col text-center">
+<<<<<<< HEAD
                                 <button name="google-login" class="btn btn-outline-success px-3"> <i class="fab fa-google"></i> &ensp; Sign In With Google</button>
                                 
+=======
+                                <button name="sign-in-submit" type="submit" class="btn btn-outline-success px-4"> <i class="fab fa-google"></i> &ensp; Sign In With Google</button>
+>>>>>>> d3d623a4ce0ad8ff56fb5a1b51cef4cb2e6d3938
                             </div>
                         </div>
                         <div class="row">
                             <div class="col text-center">
+<<<<<<< HEAD
                                 <button name="facebook-login" class="btn btn-outline-primary"> <i class="fab fa-facebook-f"></i> &ensp; Sign In With Facebook</button>
+=======
+                                <button name="sign-in-submit" type="submit" class="btn btn-outline-primary px-3"> <i class="fab fa-facebook-f"></i> &ensp; Sign In With Facebook</button>
+>>>>>>> d3d623a4ce0ad8ff56fb5a1b51cef4cb2e6d3938
                             </div>
                         </div>
                     </form>
@@ -109,7 +117,7 @@
             </div>
         </div>
         <div class="sign-footer text-center">
-            <h6><i class="fas fa-copyright"></i> 2019 UIT. All Rights Reserved. </h6>
+            <h6><i class="fas fa-copyright"></i> 2020 UIT. All Rights Reserved. </h6>
         </div>
     </section>
     <?php
